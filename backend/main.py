@@ -24,6 +24,9 @@ Base.metadata.create_all(bind=engine)
 
 # 1. Initialize App First
 app = FastAPI()
+@app.get("/")
+def read_root():
+    return {"message": "Hello from Vercel Python Backend!"}
 
 # 2. FIXED: Moved CORS Middleware to the absolute top so it applies to ALL routes
 app.add_middleware(
