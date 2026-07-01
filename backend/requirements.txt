@@ -10,3 +10,6 @@ httpx
 python-multipart
 sqlalchemy
 scikit-surprise
+passlib
+bcrypt
+python-dotenv
